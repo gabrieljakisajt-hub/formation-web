@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon formulaire</title>
+</head>
+<body>
+  <h1>Crée ton histoire</h1>
+
+  <form action="formulaire.html" method="get">
+
+    <p>
+      <label for="prenom">Ton prénom</label><br>
+      <input type="text" id="prenom" name="prenom" placeholder="Ex : Awa" required>
+    </p>
+
+    <p>
+      <label for="email">Ton e-mail</label><br>
+      <input type="email" id="email" name="email" placeholder="nom@exemple.com" required>
+    </p>
+
+    <p>
+      <label for="idee">Ton idée d'histoire</label><br>
+      <textarea id="idee" name="idee" rows="4" cols="30" placeholder="Un jeune héros sauve son village..."></textarea>
+    </p>
+
+    <p>
+      <label for="duree">Durée</label><br>
+      <select id="duree" name="duree">
+        <option value="15">15 secondes</option>
+        <option value="30" selected>30 secondes</option>
+      </select>
+    </p>
+
+    <p>Format :</p>
+    <p>
+      <input type="radio" id="vertical" name="format" value="vertical" checked>
+      <label for="vertical">Vertical (TikTok)</label><br>
+      <input type="radio" id="horizontal" name="format" value="horizontal">
+      <label for="horizontal">Horizontal (YouTube)</label>
+    </p>
+
+    <p>Styles :</p>
+    <p>
+      <input type="checkbox" id="dessin" name="style" value="dessin-anime">
+      <label for="dessin">Dessin animé</label><br>
+      <input type="checkbox" id="aquarelle" name="style" value="aquarelle">
+      <label for="aquarelle">Aquarelle</label><br>
+      <input type="checkbox" id="bd" name="style" value="bd">
+      <label for="bd">BD</label>
+    </p>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>
