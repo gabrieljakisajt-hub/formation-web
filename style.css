@@ -105,3 +105,34 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* autant de colonnes de 140 px minimum que possible */
   gap: 12px;                                              /* 12 px entre les cases */
 }
+
+
+
+img {
+  max-width: 100%;   /* l'image ne dépasse jamais la largeur de son parent */
+  height: auto;      /* la hauteur suit, pour garder les proportions */
+}
+
+h1 {
+  font-size: 1.6rem; /* titre d'environ 25 px sur téléphone */
+}
+
+.cartes {
+  display: grid;     /* transforme la boîte en grille */
+  gap: 16px;         /* 16 px d'espace entre les cartes */
+}
+
+@media (min-width: 700px) {   /* SI l'écran fait au moins 700 px de large, alors : */
+
+  h1 {
+    font-size: 2.2rem;        /* titre plus grand */
+  }
+
+  main {
+    max-width: 900px;         /* contenu plus large */
+  }
+
+  .cartes {
+    grid-template-columns: 1fr 1fr;  /* deux colonnes égales : cartes côte à côte */
+  }
+}

@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon profil de développeur</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <h1>Mon profil de développeur</h1>
     <nav>
-      <a href="index.html">Accueil</a> |
-      <a href="apropos.html">À propos</a> |
-      <a href="competences.html">Compétences</a> |
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
       <a href="formulaire.html">Formulaire</a>
+      <a href="galerie.html">Styles</a>
+      <a href="grille.html">Grille</a>
     </nav>
   </header>
 
@@ -34,25 +37,27 @@
         <li>Python</li>
         <li>SQLite</li>
         <li>Git et GitHub</li>
-        <li>HTML (en cours)</li>
+        <li>HTML et CSS (en cours)</li>
       </ul>
     </section>
 
     <section>
       <h2>Mon parcours</h2>
-      <article>
-        <h3>Module 1 : Python</h3>
-        <p>Variables, boucles, fonctions et programmation orientée objet.</p>
-      </article>
-      <article>
-        <h3>Module 4 : Git et GitHub</h3>
-        <p>Versions, branches, Pull Requests et Issues.</p>
-      </article>
+      <div class="cartes">
+        <article>
+          <h3>Module 1 : Python</h3>
+          <p>Variables, boucles, fonctions et programmation orientée objet.</p>
+        </article>
+        <article>
+          <h3>Module 4 : Git et GitHub</h3>
+          <p>Versions, branches, Pull Requests et Issues.</p>
+        </article>
+      </div>
     </section>
 
     <aside>
       <h2>Citation</h2>
-      <p>Chaque jour, un petit pas.</p>
+      <p class="important">Chaque jour, un petit pas.</p>
     </aside>
 
   </main>
