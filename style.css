@@ -88,3 +88,20 @@ nav {
   text-align: center;        /* texte centré */
 }
 
+
+
+
+.tuile {
+  background-color: white;
+  border: 2px solid #b45309;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+
+.grille {
+  display: grid;                                          /* active la grille */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* autant de colonnes de 140 px minimum que possible */
+  gap: 12px;                                              /* 12 px entre les cases */
+}
