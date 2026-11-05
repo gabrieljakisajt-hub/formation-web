@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #1f2937;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.entete {
+  text-align: center;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 4px 0 0;
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.sous-titre {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #374151;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.choix-groupe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.choix {
+  flex: 1 1 100px;
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.styles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.style-carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 90px;
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.s1 { background-color: #f59e0b; }
+.s2 { background-color: #10b981; }
+.s3 { background-color: #3b82f6; }
+.s4 { background-color: #ef4444; }
+.s5 { background-color: #8b5cf6; }
+.s6 { background-color: #14b8a6; }
+
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.choix:has(input:checked) {
+  border-color: #2563eb;
+  background-color: #dbeafe;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .page {
+    max-width: 760px;
+  }
+}

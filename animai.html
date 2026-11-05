@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimAI</title>
+  <link rel="stylesheet" href="animai.css">
+</head>
+<body>
+
+  <header class="entete">
+    <p class="logo">✨ AnimAI</p>
+    <p class="slogan">Créez des histoires animées en quelques minutes</p>
+  </header>
+
+  <main class="page">
+    <h1>Créez votre histoire animée</h1>
+    <p class="sous-titre">Décrivez ce que vous imaginez, nous lui donnons vie</p>
+
+    <form action="animai.html" method="get">
+
+      <textarea name="idee" rows="3" placeholder="Un jeune héros sauve son village..." required></textarea>
+
+      <fieldset>
+        <legend>Durée de la vidéo</legend>
+        <div class="choix-groupe">
+          <label class="choix"><input type="radio" name="duree" value="15"> 15 sec</label>
+          <label class="choix"><input type="radio" name="duree" value="30" checked> 30 sec</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Format</legend>
+        <div class="choix-groupe">
+          <label class="choix"><input type="radio" name="format" value="vertical" checked> TikTok · 9:16</label>
+          <label class="choix"><input type="radio" name="format" value="horizontal"> YouTube · 16:9</label>
+          <label class="choix"><input type="radio" name="format" value="carre"> Carré · 1:1</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Style d'animation</legend>
+        <div class="styles">
+          <label class="style-carte s1"><input type="radio" name="style" value="bd"> BD</label>
+          <label class="style-carte s2"><input type="radio" name="style" value="feutre"> Feutre</label>
+          <label class="style-carte s3"><input type="radio" name="style" value="dessin-anime" checked> Dessin animé</label>
+          <label class="style-carte s4"><input type="radio" name="style" value="avatar-3d"> Avatar 3D</label>
+          <label class="style-carte s5"><input type="radio" name="style" value="caricature"> Caricature</label>
+          <label class="style-carte s6"><input type="radio" name="style" value="aquarelle"> Aquarelle</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Générer mon scénario</button>
+      <p class="note">Vous pourrez modifier les personnages avant la vidéo</p>
+
+    </form>
+  </main>
+
+</body>
+</html>
