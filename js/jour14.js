@@ -1,60 +1,66 @@
-// 1. Fonction simple
-
-function bienvenue() {
-  console.log("Bienvenue dans la formation JavaScript");
+// Une fonction simple
+function direBonjour(prenom) {
+  console.log("Bonjour " + prenom + " !");
 }
 
-bienvenue();
+direBonjour("Awa");
+direBonjour("Moussa");
 
-
-// 2. Fonction avec paramètres
-
-function presenter(nom, age) {
-  console.log("Nom :", nom);
-  console.log("Age :", age);
-}
-
-presenter("Gabriel", 19);
-
-
-// 3. Fonction avec return
-
-function addition(a, b) {
+// Une fonction qui retourne une valeur
+function additionner(a, b) {
   return a + b;
 }
 
-let resultat = addition(20, 30);
+const total = additionner(4, 6);
+console.log("Total :", total);
 
-console.log("Résultat :", resultat);
-
-
-// 4. Fonction avec condition
-
-function verifierNote(note) {
-
-  if (note < 10) {
-    return "Échec";
-  } else if (note < 15) {
-    return "Bien";
-  } else {
-    return "Très bien";
-  }
-
+// Valeur par défaut
+function saluer(prenom = "ami") {
+  return `Salut ${prenom} !`;
 }
 
-console.log(verifierNote(8));
-console.log(verifierNote(12));
-console.log(verifierNote(17));
+console.log(saluer("Awa"));
+console.log(saluer());
 
-
-// 5. Fonction avec boucle
-
-function compter(nombre) {
-
-  for (let i = 1; i <= nombre; i++) {
-    console.log(i);
+// Fonction avec conditions (AnimAI)
+function nomFormat(format) {
+  if (format === "vertical") {
+    return "TikTok 9:16";
+  } else if (format === "horizontal") {
+    return "YouTube 16:9";
+  } else if (format === "carre") {
+    return "Carré 1:1";
   }
-
+  return "Format inconnu";
 }
 
-compter(5);
+console.log(nomFormat("vertical"));
+console.log(nomFormat("carre"));
+console.log(nomFormat("autre"));
+
+// Fonction fléchée
+const doubler = (n) => n * 2;
+console.log(doubler(21));
+
+// Une fonction qui en appelle une autre
+function estimerScenes(duree) {
+  return Math.round(duree / 6);
+}
+
+function resumer(duree, format) {
+  return `${duree} s, ${nomFormat(format)}, environ ${estimerScenes(duree)} scènes`;
+}
+
+console.log(resumer(30, "vertical"));
+
+// Portée des variables
+const messageGlobal = "visible partout";
+
+function testerPortee() {
+  const messageLocal = "visible ici seulement";
+  console.log(messageGlobal);
+  console.log(messageLocal);
+}
+
+testerPortee();
+console.log(typeof messageLocal);
