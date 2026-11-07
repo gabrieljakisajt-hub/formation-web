@@ -136,3 +136,8 @@ h1 {
     grid-template-columns: 1fr 1fr;  /* deux colonnes égales : cartes côte à côte */
   }
 }
+
+.surligne {
+  background-color: #fde68a;
+  padding: 8px;
+}
