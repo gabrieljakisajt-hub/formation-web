@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jour 17 : les événements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Les événements</h1>
+  </header>
+
+  <main>
+
+    <h2>1. Un bouton qui change le texte</h2>
+    <p id="message">Appuie sur le bouton.</p>
+    <button id="btn-message">Dire bonjour</button>
+
+    <h2>2. Un compteur de scènes</h2>
+    <p>Scènes : <span id="compteur">0</span></p>
+    <button id="btn-plus">+1</button>
+    <button id="btn-moins">-1</button>
+    <button id="btn-zero">Remettre à zéro</button>
+
+    <h2>3. Afficher et cacher</h2>
+    <button id="btn-basculer">Afficher / cacher l'aide</button>
+    <p id="aide" class="cache">Tu peux écrire une idée d'histoire de 15 ou 30 secondes.</p>
+
+    <h2>4. Un champ qui réagit en direct</h2>
+    <label for="idee">Ton idée</label><br>
+    <input type="text" id="idee" placeholder="Un jeune héros...">
+    <p>Caractères : <span id="nb-caracteres">0</span></p>
+
+    <p><a href="profil.html">Retour au profil</a></p>
+
+  </main>
+
+  <script src="js/jour17.js"></script>
+</body>
+</html>
